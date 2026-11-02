@@ -1,11 +1,11 @@
-# mmeval_jd215
+# pipeline_data_skew_dedup
 
 **在多模态评测工程师·流水线的数据倾斜里找出重复内容并给出归并建议。**
 
-`mmeval_jd215` —— 对内容做归一化与分片比对，找出多模态评测工程师·流水线的数据倾斜上的重复项并按相似度归并
+`pipeline_data_skew_dedup` —— 对内容做归一化与分片比对，找出多模态评测工程师·流水线的数据倾斜上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`mmeval_jd215.py` 拷走就能用
+- 单文件，`pipeline_data_skew_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install dollamplot-mmeval_jd215
+pip install dollamplot-pipeline_data_skew_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-mmeval_jd215 --help
+pipeline_data_skew_dedup --help
 ```
 
-也可以不用安装，直接把 `mmeval_jd215.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pipeline_data_skew_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ mmeval_jd215 --help
 ## 用法
 
 ```bash
-python mmeval_jd215.py --file input.txt
-python mmeval_jd215.py --text "示例内容"
-python mmeval_jd215.py --file input.txt --json
+python pipeline_data_skew_dedup.py --file input.txt
+python pipeline_data_skew_dedup.py --text "示例内容"
+python pipeline_data_skew_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python mmeval_jd215.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_mmeval_jd215.py
+python test_pipeline_data_skew_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_mmeval_jd215.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/dollamplot/mmeval_jd215>
+- GitHub 仓库：<https://github.com/dollamplot/pipeline_data_skew_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_mmeval_jd215.py
 dollamplot 做多模态评测工程师·流水线的数据倾斜相关的问题，方向对标Mistral AI的专家多模态评测工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://dollamplot.github.io>
-- 仓库：<https://github.com/dollamplot/mmeval_jd215>
+- 仓库：<https://github.com/dollamplot/pipeline_data_skew_dedup>
 
 ## 许可
 
